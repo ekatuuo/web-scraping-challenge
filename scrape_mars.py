@@ -1,9 +1,19 @@
+# Dependencies
+from bs4 import BeautifulSoup
+from splinter import Browser
+import pandas as pd
 import datetime as dt
+
+
+# executable_path = {"executable_path": "\Users\ekatu\Downloads\chromedriver"}
+# browser = Browser("chrome", **executable_path, headless=False)
 
 def scrape_all():
 
-    news_title = 'Testing'
-    news_paragraph = 'Testing'
+
+# Scrape the Latest News Title
+    news_title = slide_element.find("div", class_="content_title").get_text()
+    news_paragraph = slide_element.find("div", class_="article_teaser_body").get_text()
     featured_image = 'https://linktoimage.png'
     mars_facts = 'Testing'
     news_title = 'Testing'
